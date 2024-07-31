@@ -1,10 +1,13 @@
-limit=int(input("Enter the limit: "))
-n1=0
-n2=1
-sum=n1+n2
-for i in range(2,limit):
-    n3=n1+n2
-    sum=sum+n3
-    n1=n2
-    n2=n3
-print(" Cumulative Sum of ",limit," numbers of fibonacci series= ",sum)
+def fibonacci(n):
+    if n <= 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
+
+
+limit = int(input("Enter the limit: "))
+print("Fibonacci series:")
+for i in range(limit):
+    print(fibonacci(i), end=" ")
