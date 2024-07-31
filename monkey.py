@@ -4,7 +4,7 @@ j=int(input())
 m=int(input())
 p=int(input())
 total=n
-if((k>m)or(j>p)):
+if((k>m)or(j>p)or(k==0)or(j==0)):
     print("INVALID INPUT")
 n1=m//k
 n2=p//j
