@@ -4,10 +4,11 @@ j=int(input())
 m=int(input())
 p=int(input())
 total=n
+if((k>m)or(j>p)):
+    print("INVALID INPUT")
 n1=m//k
-n=n-n1
 n2=p//j
-n=n-n2
+n=n-(n1+n2)
 if((m%k>0)or(p%j>0)):
     n=n-1
 if(n<total):
