@@ -23,6 +23,6 @@ def longest(s):
                     max=length
     return s[start:start+max]
 
-a="abcbedrardea"
+a=input("Enter the string: ")
 ans=longest(a)
 print("Longest palindrome= ",ans)
