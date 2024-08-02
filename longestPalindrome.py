@@ -7,6 +7,7 @@ def longest(s):
     for i in range(n):
         dp[i][i]=True
         
+        
     for i in range(n-1):
         if(s[i]==s[i+1]):
             dp[i][i+1]=True
